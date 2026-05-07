@@ -73,7 +73,7 @@ PACKAGECONFIG ??= " \
 "
 
 # -- Cables ------------------------------------------------------------------
-PACKAGECONFIG[cable-anlogic]      = "-DENABLE_ANLOGIC_CABLE=ON,             -DENABLE_ANLOGIC_CABLE=OFF,               libusb1,"
+PACKAGECONFIG[cable-anlogic]      = "-DENABLE_ANLOGIC_CABLE=ON,              -DENABLE_ANLOGIC_CABLE=OFF,              libusb1,"
 PACKAGECONFIG[cable-ch347]        = "-DENABLE_CH347=ON,                      -DENABLE_CH347=OFF,                      libusb1,"
 PACKAGECONFIG[cable-cmsisdap]     = "-DENABLE_CMSISDAP=ON,                   -DENABLE_CMSISDAP=OFF,                   hidapi,"
 PACKAGECONFIG[cable-dirtyjtag]    = "-DENABLE_DIRTYJTAG=ON,                  -DENABLE_DIRTYJTAG=OFF,                  libusb1,"
@@ -86,7 +86,7 @@ PACKAGECONFIG[cable-jlink]        = "-DENABLE_JLINK=ON,                      -DE
 PACKAGECONFIG[cable-remotebitbang]= "-DENABLE_REMOTEBITBANG=ON,              -DENABLE_REMOTEBITBANG=OFF,              ,"
 PACKAGECONFIG[cable-svf]          = "-DENABLE_SVF_JTAG=ON,                   -DENABLE_SVF_JTAG=OFF,                   ,"
 PACKAGECONFIG[cable-usb-blaster1] = "-DENABLE_USB_BLASTERI=ON,               -DENABLE_USB_BLASTERI=OFF,               libftdi,"
-PACKAGECONFIG[cable-usb-blaster2] = "-DENABLE_USB_BLASTERII=ON,              -DENABLE_USB_BLASTERII=OFF,              libftdi,"
+PACKAGECONFIG[cable-usb-blaster2] = "-DENABLE_USB_BLASTERII=ON,              -DENABLE_USB_BLASTERII=OFF,              libusb1,"
 PACKAGECONFIG[cable-xvc-client]   = "-DENABLE_XILINX_VIRTUAL_CABLE_CLIENT=ON,-DENABLE_XILINX_VIRTUAL_CABLE_CLIENT=OFF,,"
 PACKAGECONFIG[cable-xvc-server]   = "-DENABLE_XILINX_VIRTUAL_CABLE_SERVER=ON,-DENABLE_XILINX_VIRTUAL_CABLE_SERVER=OFF,,"
 
