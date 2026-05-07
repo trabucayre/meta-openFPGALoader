@@ -91,15 +91,15 @@ PACKAGECONFIG[cable-xvc-client]   = "-DENABLE_XILINX_VIRTUAL_CABLE_CLIENT=ON,-DE
 PACKAGECONFIG[cable-xvc-server]   = "-DENABLE_XILINX_VIRTUAL_CABLE_SERVER=ON,-DENABLE_XILINX_VIRTUAL_CABLE_SERVER=OFF,,"
 
 # -- Vendor targets ----------------------------------------------------------
-PACKAGECONFIG[vendor-altera]      = "-DENABLE_ALTERA_SUPPORT=ON,      -DENABLE_ALTERA_SUPPORT=OFF,      zlib,"
-PACKAGECONFIG[vendor-anlogic]     = "-DENABLE_ANLOGIC_SUPPORT=ON,     -DENABLE_ANLOGIC_SUPPORT=OFF,     ,"
-PACKAGECONFIG[vendor-colognechip] = "-DENABLE_COLOGNECHIP_SUPPORT=ON, -DENABLE_COLOGNECHIP_SUPPORT=OFF, libftdi,"
-PACKAGECONFIG[vendor-efinix]      = "-DENABLE_EFINIX_SUPPORT=ON,      -DENABLE_EFINIX_SUPPORT=OFF,      libftdi,"
-PACKAGECONFIG[vendor-gowin]       = "-DENABLE_GOWIN_SUPPORT=ON,       -DENABLE_GOWIN_SUPPORT=OFF,       ,"
-PACKAGECONFIG[vendor-ice40]       = "-DENABLE_ICE40_SUPPORT=ON,       -DENABLE_ICE40_SUPPORT=OFF,       libftdi,"
-PACKAGECONFIG[vendor-lattice]     = "-DENABLE_LATTICE_SUPPORT=ON,     -DENABLE_LATTICE_SUPPORT=OFF,     ,"
-PACKAGECONFIG[vendor-latticesspi] = "-DENABLE_LATTICESSPI_SUPPORT=ON, -DENABLE_LATTICESSPI_SUPPORT=OFF, libftdi,"
-PACKAGECONFIG[vendor-xilinx]      = "-DENABLE_XILINX_SUPPORT=ON,      -DENABLE_XILINX_SUPPORT=OFF,      ,"
+PACKAGECONFIG[vendor-altera]      = "-DENABLE_ALTERA_SUPPORT=ON,                                   -DENABLE_ALTERA_SUPPORT=OFF,      zlib,"
+PACKAGECONFIG[vendor-anlogic]     = "-DENABLE_ANLOGIC_SUPPORT=ON,                                  -DENABLE_ANLOGIC_SUPPORT=OFF,     ,"
+PACKAGECONFIG[vendor-colognechip] = "-DENABLE_COLOGNECHIP_SUPPORT=ON -DENABLE_FTDI_BASED_CABLE=ON, -DENABLE_COLOGNECHIP_SUPPORT=OFF, libftdi,"
+PACKAGECONFIG[vendor-efinix]      = "-DENABLE_EFINIX_SUPPORT=ON -DENABLE_FTDI_BASED_CABLE=ON,      -DENABLE_EFINIX_SUPPORT=OFF,      libftdi,"
+PACKAGECONFIG[vendor-gowin]       = "-DENABLE_GOWIN_SUPPORT=ON,                                    -DENABLE_GOWIN_SUPPORT=OFF,       ,"
+PACKAGECONFIG[vendor-ice40]       = "-DENABLE_ICE40_SUPPORT=ON -DENABLE_FTDI_BASED_CABLE=ON,       -DENABLE_ICE40_SUPPORT=OFF,       libftdi,"
+PACKAGECONFIG[vendor-lattice]     = "-DENABLE_LATTICE_SUPPORT=ON,                                  -DENABLE_LATTICE_SUPPORT=OFF,     ,"
+PACKAGECONFIG[vendor-latticesspi] = "-DENABLE_LATTICESSPI_SUPPORT=ON -DENABLE_FTDI_BASED_CABLE=ON, -DENABLE_LATTICESSPI_SUPPORT=OFF, libftdi,"
+PACKAGECONFIG[vendor-xilinx]      = "-DENABLE_XILINX_SUPPORT=ON,                                   -DENABLE_XILINX_SUPPORT=OFF,      ,"
 
 # -- System integration ------------------------------------------------------
 PACKAGECONFIG[usb-scan]           = "-DENABLE_USB_SCAN=ON,            -DENABLE_USB_SCAN=OFF,            libusb1,"
